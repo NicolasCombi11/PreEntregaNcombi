@@ -1,0 +1,32 @@
+.nosotros-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .nosotros-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .nosotros-image {
+    display: block;
+    margin: 0 auto 30px auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .nosotros-text {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,18 @@
+.footer {
+    background-color: #2c005e; /* Navy blue background */
+    color: white; /* White text */
+  }
+  
+  .footer a {
+    color: white; /* White text for links */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+  .footer img {
+    width: 24px; /* Size adjustment */
+    height: 24px; /* Size adjustment */
+  }
+  

@@ -1,27 +1,30 @@
-import { useState } from "react";
+import { useState } from 'react'
 
-const ItemCount = ({ initial = 1, stock }) => {
-  const [count, setCount] = useState(initial);
+function ItemCount({initialValue=1, stock, onAdd}) {
+    const [count, setCount] = useState(initialValue);
+    
 
-  const increment = () => {
-    if (count < stock) {
-      setCount((prev) => prev + 1);
+    const decrement = () => {
+        if(count>1){
+            setCount(count => count - 1)
+        }
     }
-  };
+    const increment = () => {
+        if(count < stock){
+            setCount((count) => count + 1);
+        }
+    };
 
-  const decrement = () => {
-    if (count > 1) {
-      setCount((prev) => prev - 1);
-    }
-};
+  return (
+    <>
+      
+      <button onClick={decrement} type="button" className="btn btn-secondary">-</button>
+      <h1>{count}</h1>
+      <button onClick={increment} type="button" className="btn btn-secondary">+</button>
+      <button onClick={() => onAdd(count)} type="button" className="btn btn-secondary">Agregar</button>
+      
+    </>
+  );
+}
 
-return (
-  <div>
-    <h1>{count}</h1>
-    <button onClick={decrement} >-</button>
-    <button onClick={increment}>+</button>
-  </div>
-);
-};
-
-export default ItemCount;
+export default ItemCount

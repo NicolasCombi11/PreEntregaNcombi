@@ -1,0 +1,66 @@
+/* Estilos generales para los elementos del menú */
+.Option, .dropdown-item, .nav-item {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  background: #9ca0f9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0d0c0c;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.nav-item{
+  color: #0e0d0d;
+}
+
+
+/* Estilos específicos para elementos de menú desplegable */
+.dropdown-item {
+  background: #9d98f0 !important;
+  color: #000000 !important;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background: #1a003c !important;
+  color: #FFFFFF !important;
+}
+
+/* Estilos específicos para el botón de despliegue del menú */
+.navbar-toggler {
+  background: #040549;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+  background: #1a003c;
+}
+
+/* Estilo para el texto del botón de despliegue */
+.navbar-toggler-icon {
+  color: #FFFFFF;
+}
+
+
+.ActiveOption {
+  /* color: #8C30F5; */
+  /* TODO */
+  border-radius: 8px;
+ color: #040549;
+  text-decoration: none;
+  border: none;
+  border-style: none;
+}

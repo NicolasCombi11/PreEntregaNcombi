@@ -1,13 +1,14 @@
-import Item from "../Item/Item"
+import {memo} from 'react'
 
+import Item from "../Item/Item"
+import "./ItemList.css";
 const ItemList = ({products}) => {
+  console.log("me redibuje")
   return (
-    <div>
-        {products.map( prod => {
-            return <Item  key={prod.id} {...prod}/>
-        })}
+    <div className="grid">
+        {products.map( product => <Item product={product} key={product.id} />)}        
     </div>
   )
 }
 
-export default ItemList
+export default memo(ItemList)

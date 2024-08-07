@@ -1,24 +1,48 @@
-
 import { useEffect, useState } from "react";
-import { getProductById } from "../../asyncMock"
 import { useParams } from "react-router-dom";
+//import { getProductById } from "../../asyncMock";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import "./ItemDetailContainer.css";
 
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../services/firebase";
 
-export const ItemDetailContainer = () => {
-    const [product, setProduct] = useState();
-    const {id} =  useParams()
-    useEffect(()=>{
-        getProductById(id)
-            .then((res)=>{
-                setProduct(res)
-                console.log(product)
-            })
-            .catch((err)=> console.log(err))
-    }, [id])
+const ItemDetailContainer = () => {
+  // tomar de la url el id
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const { productId } = useParams();
+  //console.log(productId)
+  useEffect(() => {
+    getDoc(doc(db, "products", productId))
+      .then((querySnapshot) => {
+        //console.log(res);
+        const product = {id: querySnapshot.id, ...querySnapshot.data()}
+        setProduct(product);
+      })
+      .catch((err) => console.log(err))
+      .finally(() => {
+        setLoading(false);
+      });
+  }, [productId]);
+
   return (
-    <div>
-        <ItemDetail {...product} className="mx-auto p-2"/>
+    <div className="ItemDetailContainer">
+      {loading ? (
+        <h3
+          style={{
+            color: "white",
+            backgroundColor: "#2c005e",
+            textAlign: "center",
+          }}
+        >
+          Cargando...
+        </h3>
+      ) : (
+        <ItemDetail {...product} />
+      )}
     </div>
-  )
-}
+  );
+};
+
+export default ItemDetailContainer
