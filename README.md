@@ -1,8 +1,92 @@
-# React + Vite
+# PreEntregaNcombi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este Proyecto Es Una Pre-Entrega Para El Curso De Desarrollo Web. El Objetivo Es Crear Una Tienda Online De Suplementos Alimenticios Utilizando React, Bootstrap Y Otras TecnologíAs Modernas.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
+1. Instalación
+2. Uso
+3. Estructura del Proyecto
+4. Funcionalidades
+5. Tecnologías Utilizadas
+6. Contribuciones
+7. Licencia
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instalación
+
+Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
+
+- Clona el repositorio:
+
+  git clone https://github.com/NicolasCombi11/PreEntregaNcombi.git
+
+- Navega al directorio del proyecto:
+
+  cd PreEntregaNcombi
+
+- Instala las dependencias:
+
+  npm install
+
+- Ejecuta la aplicación:
+
+  npm start
+
+La aplicación se ejecutará en http://localhost:3000.
+
+### Uso
+Una vez que la aplicación esté en funcionamiento, podrás navegar por las diferentes secciones de la tienda online, ver los productos disponibles, agregarlos al carrito y proceder a la compra.
+
+### Estructura del Proyecto
+
+La estructura del proyecto es la siguiente:
+
+java
+
+#### ### PreEntregaNcombi/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── components/
+│   │   ├── NavBar/
+│   │   │   └── NavBar.js
+│   │   │   └── NavBar.css
+│   │   ├── CardWidget/
+│   │   │   └── CardWidget.js
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── Contact.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+├── package.json
+├── README.md
+└── ...
+
+### Funcionalidades
+
+1. Navegación: Utiliza React Router para la navegación entre páginas.
+2. Catálogo de Productos: Lista de productos disponibles con sus respectivas categorías.
+3. Carrito de Compras: Agrega productos al carrito y procede a la compra.
+4. Estilos Modernos: Usa Bootstrap para un diseño moderno y responsive.
+
+### Tecnologías Utilizadas
+
+- 1. React: Biblioteca para construir interfaces de usuario.
+- 2. Bootstrap: Framework CSS para estilos responsivos y modernos.
+- 3. React Router: Librería para manejo de rutas en React.
+- 4. Firebase: Plataforma para desarrollo de aplicaciones, utilizada para el manejo de datos.
+
+### Contribuciones
+
+1. Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos pasos:
+2. Haz un fork del proyecto.
+3. Crea una rama para tu nueva funcionalidad (git checkout -b nueva-funcionalidad).
+4. Realiza tus cambios y commitea (git commit -am 'Agrega nueva funcionalidad').
+5. Empuja tus cambios a la rama (git push origin nueva-funcionalidad).
+6. Abre un Pull Request.
+
+### LicenciaLicencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
