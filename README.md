@@ -1,6 +1,6 @@
 # PreEntregaNcombi
 
-Este Proyecto Es Una Pre-Entrega Para El Curso De Desarrollo Web. El Objetivo Es Crear Una Tienda Online De Suplementos Alimenticios Utilizando React, Bootstrap Y Otras TecnologíAs Modernas.
+Este Proyecto Es Una Pre-Entrega Para El Curso De React Js. El Objetivo Es Crear Una Tienda Online De Suplementos Alimenticios Utilizando React, Bootstrap Y Otras TecnologíAs Modernas.
 
 ## Tabla de Contenidos
 1. Instalación
