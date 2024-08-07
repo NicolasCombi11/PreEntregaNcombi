@@ -43,27 +43,27 @@ La estructura del proyecto es la siguiente:
 java
 
 #### ### PreEntregaNcombi/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├── NavBar/
-│   │   │   └── NavBar.js
-│   │   │   └── NavBar.css
-│   │   ├── CardWidget/
-│   │   │   └── CardWidget.js
-│   │   └── ...
-│   ├── pages/
-│   │   ├── Home.js
-│   │   ├── Contact.js
-│   │   └── ...
-│   ├── App.js
-│   ├── index.js
-│   └── ...
-├── package.json
-├── README.md
-└── ...
+1. ├── public/
+2. │   ├── index.html
+3. │   └── ...
+4. ├── src/
+5. │   ├── components/
+6. │   │   ├── NavBar/
+7. │   │   │   └── NavBar.js
+8. │   │   │   └── NavBar.css
+9. │   │   ├── CardWidget/
+10. │   │   │   └── CardWidget.js
+11. │   │   └── ...
+12. │   ├── pages/
+13. │   │   ├── Home.js
+14. │   │   ├── Contact.js
+15. │   │   └── ...
+16. │   ├── App.js
+17. │   ├── index.js
+18. │   └── ...
+19. ├── package.json
+20. ├── README.md
+21. └── ...
 
 ### Funcionalidades
 
