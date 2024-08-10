@@ -17,7 +17,7 @@ const Cart = () => {
       ))}
       <h3 style={{ textAlign: "center" }}>Total: ${total}</h3>
       <div className="d-flex justify-content-center ">
-        <button className="btn btn-secondary mb-5 m-1" onClick={clearCart}>Limpiar Carrito</button>
+        <button className="btn btn-secondary mb-5 m-1" >Limpiar Carrito</button>
         <Link to="/checkout" className="btn btn-info mb-5 m-1">
           Finalizar compra
         </Link>
